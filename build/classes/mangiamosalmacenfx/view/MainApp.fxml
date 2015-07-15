@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane minHeight="768.0" minWidth="1024.0" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mangiamosalmacenfx.controller.MainAppController">
+   <top>
+      <VBox prefHeight="100.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <MenuBar>
+              <menus>
+                <Menu mnemonicParsing="false" text="Archivo">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Close" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Ayuda">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+            <ToolBar prefHeight="30.0" prefWidth="200.0">
+              <items>
+                <Button fx:id="btBranch" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#showBranch" prefWidth="90.0" text="SUCURSALES">
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/Shop-icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btItem" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#showItem" prefWidth="100.0" text="PRODUCTOS">
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/products.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btOrder" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" prefWidth="100.0" text="PEDIDIOS">
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/Order-history-icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btCategory" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#showCategorys" prefWidth="100.0" text="CATEGORIAS">
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/categors.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btUsers" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" prefWidth="100.0" text="USUARIOS">
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/Users-icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Button fx:id="btStatistics" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" prefWidth="100.0" text="Estadisticas">
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/Bar-chart-icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+              </items>
+            </ToolBar>
+         </children>
+      </VBox>
+   </top>
+   <bottom>
+      <VBox prefHeight="30.0" prefWidth="100.0" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>
